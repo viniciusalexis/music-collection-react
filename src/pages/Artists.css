@@ -1,0 +1,129 @@
+.artists-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .page-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #343a40;
+    margin: 0;
+
+  }
+  
+  .menu-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu-button {
+    font-size: 16px;
+    color: #343a40;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu-button svg {
+    margin-right: 5px;
+  }
+  
+  .menu-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 12px;
+    z-index: 1;
+    text-align: center;
+    min-width: 120px;
+  }
+  
+  .menu-dropdown button {
+    font-weight: bold;
+    color: #007bff;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .menu-dropdown button svg {
+    margin-right: 10px;
+  }
+  
+  .menu-dropdown a,
+  .menu-dropdown button {
+    display: block;
+    padding: 8px;
+    color: #343a40;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    white-space: nowrap;
+  }
+  
+  .menu-dropdown button {
+    margin-top: 10px;
+  }
+  
+  .menu-dropdown button svg {
+    margin-right: 5px;
+  }
+  
+  .menu-dropdown a:hover,
+  .menu-dropdown button:hover {
+    background-color: #f8f9fa;
+  }
+  
+  .error-message {
+    color: #dc3545;
+  }
+  
+  .artist-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  .artist-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    width: calc(33.333% - 40px);
+    text-align: left;
+    box-sizing: border-box;
+  }
+  
+  .artist-item strong {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  @media (max-width: 767px) {
+    .artist-item {
+      width: calc(100% - 40px);
+    }
+  }
+  
